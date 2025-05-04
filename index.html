@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Cars</title>
+    <link rel="icon" type="image/png" href="images/Zara cars logo icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-light sticky-top">
+        <!-- navbar start  -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <!-- Logo and branding -->
+                 
+                <a href="index.html"><img src="./images/Zara cars logo icon.png" alt="Zara logo" width="70" height="50" class="mx-2"></a>
+                <div class="navbar-brand me-5 lh-1">
+                    <div class="fw-bold">ZARA</div>
+                    <div class="text-black me-5">cars</div>
+                </div>
+
+                <!-- Navbar toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold ">
+                        <!-- <li class="nav-item "><a href="#" class="nav-link text-black me-4">Home</a></li> -->
+                        <li class="nav-item"><a href="about.html" class="nav-link text-black me-4">About Us</a></li>
+                        <!-- Dropdown for Rental Cars -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-black me-4" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Rental Cars
+                            </a>
+                            <div class="dp dropdown-menu py-5 px-2" id="navbarSupportedContent">
+                                <div class="dpi row  lh-lg text-black ">
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Tenkasi</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Kovilpatti</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Surandai</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Rajapalayam</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Tirunelveli</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Pavoorchatram</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Sankarankovil</a></div>
+                                    <div class="col-6"><a href="cars.html" class="dropdown-item fw-bold  p-2">Car Rental in
+                                            Sengottai</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Additional links on the right -->
+                    <ul class="navbar-nav fw-bold ">
+                        <li class="nav-item ms-5 "><a href="faqs.html" class="nav-link text-black">FAQs</a></li>
+                        <li class="nav-item ms-5"><a href="signin.html" class="nav-link text-black">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end  -->
+
+    <!-- pick container  start-->
+    <section class="container-detail py-5">
+
+        <div class="container-contend">
+            <h1 class="lh-base fs-1 fw-bold ">Turn Your Travel</h1>
+            <h1 class="lh-base fs-1 fw-bold">Dreams Into a Reality</h1>
+            <p class="fs-5">Zara cars is a one of the most trusted car rental service.You can book cars on an
+                hourly,daily,weekly,monthly basis.Moreover,We provide Door-step delivery,believe in complete
+                transparency and adhere strictly to business ethics.</p>
+        </div>
+
+        <div class="container-blue my-5">
+            <form class="row g-5 justify-content-center text-black fw-bold ">
+                <!-- Select Car Type -->
+                <div class="col-auto">
+                    <label for="carType" class="form-label">Car Type</label>
+                    <div>
+                        <label class="d-block"><input type="radio" name="seater" value="5seater" class="">5Seater</label>
+                        <label><input type="radio" name="seater" value="7seater"> 7Seater</label>
+                    </div>
+                </div>
+
+                <!-- Select Date -->
+                <div class="col-auto">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+
+                <!-- Select Location -->
+                <div class="col-auto">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" id="location" class="form-control" placeholder="Enter Location">
+                </div>
+
+                <!-- Select Time -->
+                <div class="col-auto">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="time" id="time" class="form-control" placeholder="Select Time">
+                </div>
+
+                <!-- Search Button -->
+                <div class="col-auto align-self-center">
+                    <button type="submit" onclick="event()" class="btn btn-light border border-black px-5 py-2 fw-bold rounded-5">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- pick container end  -->
+
+
+    <!-- banner section home page image  -->
+    <section class="banner">
+        <img src="./images/Zara cars home page Images.png" alt="Zara cars home page Images.png" class="mb-5">
+    </section>
+
+
+    <!-- Customer statisfication  -->
+    <section class=" text-center mt-5">
+        <h2 class="">Our commitment is Customer Statisfication.</h2>
+        <h2>With Transparent Pricing Flexible Rental cars</h2>
+        <div class="line bg-balck my-5 "></div>
+    </section>
+
+    <!-- tick -->
+    <div class="tick container">
+        <div class="row my-5 mx-auto">
+            <!-- Experience Column -->
+            <div class="col-12 col-sd-6 col-md-4  d-flex  mt-3">
+                <div class="d-flex justify-content-center">
+                    <span class="px-2 me-3 d-flex justify-content-center align-items-center ">
+                        <img src="./images/Experience Icon.png" alt="Experience Icon" width="50" height="50">
+                    </span>
+                    <div>
+                        <h2 class="fs-4">Experience</h2>
+                        <h5 class="fs-5">We have More than 200 Years</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Clients Served Column -->
+            <div class="col-12 col-sd-6 col-md-4  d-flex  mt-3">
+                <div class="d-flex ">
+                    <span class="px-2 me-3 d-flex justify-content-center align-items-center">
+                        <img src="./images/Experience Icon.png" alt="Clients Served Icon" width="50" height="50">
+                    </span>
+                    <div>
+                        <h2 class="fs-4">Clients Served</h2>
+                        <h4 class="fs-5">More than 1500+ Clients</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Stock Cars Column -->
+            <div class="col-12 col-sd-6 col-md-4  d-flex  mt-3">
+                <div class="d-flex ">
+                    <span class="px-2 me-3 d-flex justify-content-center align-items-center">
+                        <img src="./images/Experience Icon.png" alt="Stock Cars Icon" width="50" height="50">
+                    </span>
+                    <div>
+                        <h2 class="fs-4">Stock Cars</h2>
+                        <h4 class="fs-5">1200+ Cars</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- our top selling cars  -->
+    <h1 class="text-center p-5">Our Topselling Cars</h1>
+
+
+    <!-- 5 Seater Manual Cars Section -->
+    <section class="seater5 container py-5">
+        <h2 class="my-5 text-center">Manual 5-Seater Cars</h2> <!-- Centered title for better alignment -->
+        <div class="row justify-content-center"> <!-- Bootstrap row for responsive layout -->
+            <!-- Card-1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card rounded-5 shadow-sm">
+                    <h5 class="card-title text-center fs-4 m-4">Maruti Swift</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Swift Maruti image.png"
+                        class="img-fluid mx-auto" alt="Maruti Swift Image">
+                    <div class="card-body ms-4 text-midle fw-semibold text-black">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="Hatchback Icon"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="Manual Icon"
+                                class="mx-2">Manual</p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="Seats Icon" class="mx-2">5
+                            Seats</p>
+                        <div class="position-relative">
+                            <p class="card-text fs-3 fw-bold"><img src="./images/cars Rupees icon.png" alt="Rupees Icon"
+                                    class="mx-2">2500</p>
+                            <span class="position-absolute top-0 start-50 translate-middle text-black ">Per Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card rounded-5 shadow-sm">
+                    <h5 class="card-title text-center fs-4 m-4">Santro AT Hyundai</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Santro AT Hyndai image.png"
+                        class="img-fluid mx-auto" alt="Santro AT Hyundai Image">
+                    <div class="card-body ms-4 text-start fw-semibold text-black">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="Hatchback Icon"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="Manual Icon"
+                                class="mx-2">Manual</p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="Seats Icon" class="mx-2">5
+                            Seats</p>
+                        <div class="position-relative">
+                            <p class="card-text fs-3 fw-bold"><img src="./images/cars Rupees icon.png" alt="Rupees Icon"
+                                    class="mx-2">2800</p>
+                            <span class="position-absolute top-0 start-50 translate-middle text-black">Per Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card rounded-5 shadow-sm">
+                    <h5 class="card-title text-center fs-4 m-4">Baleno AT Maruti</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Santro AT Maruti image.png"
+                        class="img-fluid mx-auto" alt="Baleno AT Maruti Image">
+                    <div class="card-body ms-4 text-start fw-semibold text-black">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="Hatchback Icon"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="Manual Icon"
+                                class="mx-2">Manual</p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="Seats Icon" class="mx-2">5
+                            Seats</p>
+                        <div class="position-relative">
+                            <p class="card-text fs-3 fw-bold"><img src="./images/cars Rupees icon.png" alt="Rupees Icon"
+                                    class="mx-2">3500</p>
+                            <span class="position-absolute top-0 start-50 translate-middle text-black">Per Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center my-4">
+            <button class="btn btn-primary m-5 fw-semibold py-2 px-3 rounded-pill">View More</button>
+            <!-- Improved button styling -->
+        </div>
+    </section>
+
+
+
+
+    <!-- 5 seater Automatic cars  -->
+    <section class="seater5 container my-5 ">
+        <h2 class="my-5">Automatic 5Seater Cars </h2>
+        <div class="card-group m-auto ">
+            <!-- card-1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card me-5 rounded-5 card ">
+                    <h5 class="card-title text-center fs-4 m-4">Maruti Swift</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Swift Maruti image.png" width="250"
+                        class=" img-fluid mx-auto" alt="maruti swift.png">
+                    <div class="card-body mx-5 fs-5 fw-semibold">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png"
+                                class="mx-2">Automatic</p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">5Seats
+                        </p>
+                        <div class="position-relative">
+                            <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                    alt="ruspee icon.png" class="mx-2">2500</p>
+                            <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card me-5 rounded-5 card ">
+                    <h5 class="card-title text-center fs-4 m-4">Santro AT Hyndai</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Santro AT Hyndai image.png" width="250"
+                        class=" img-fluid mx-auto" alt="maruti swift.png">
+                    <div class="card-body mx-5 fs-5 fw-semibold">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png"
+                                class="mx-2">Automatic
+                        </p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">5Seats
+                        </p>
+                        <div class="position-relative">
+                            <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                    alt="ruspee icon.png" class="mx-2">2800</p>
+                            <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3  -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Responsive card layout -->
+                <div class="card me-5 rounded-5 card ">
+                    <h5 class="card-title text-center fs-4 m-4">Baleno AT Maruti</h5>
+                    <img src="./images/5 Seater cars (Manual and automatic)-Santro AT Maruti image.png" width="250"
+                        class=" img-fluid mx-auto" alt="maruti swift.png">
+                    <div class="card-body mx-5 fs-5 fw-semibold">
+                        <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                                class="mx-2">Hatchback</p>
+                        <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png"
+                                class="mx-2">Automatic
+                        </p>
+                        <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">5Seats
+                        </p>
+                        <div class="position-relative">
+                            <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                    alt="ruspee icon.png" class="mx-2">3500</p>
+                            <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- view more  -->
+        <div class="text-center my-3">
+            <button class="  m-5 fw-semibold py-2 px-3 rounded-4 ">View More</button>
+        </div>
+    </section>
+
+
+
+    <!-- 7 seater manual cars  -->
+    <section class="seater5 container my-5 ">
+        <h2 class="my-5">Manual 7Seater Cars </h2>
+        <div class="card-group m-auto ">
+            <!-- card-1 -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Maruti Swift</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Swift Maruti.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Manual</p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">2500</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2  -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Santro AT Hyndai</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Santro AT Huyndai image.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Manual</p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">2800</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3  -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Baleno AT Maruti</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Baleno AT Maruti image.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Manual</p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">3500</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- view more  -->
+        <div class="text-center my-3">
+            <button class="  m-5 fw-semibold py-2 px-3 rounded-4 ">View More</button>
+        </div>
+    </section>
+
+
+
+    <!-- 7 seater Automatic cars  -->
+    <section class="seater5 container my-5 ">
+        <h2 class="my-5">Automatic 7Seater Cars </h2>
+        <div class="card-group m-auto ">
+            <!-- card-1 -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Maruti Swift</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Swift Maruti.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Automatic
+                    </p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">2500</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2  -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Santro AT Hyndai</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Santro AT Huyndai image.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Automatic
+                    </p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">2800</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3  -->
+            <div class="card me-5 rounded-5 card ">
+                <h5 class="card-title text-center fs-4 m-4">Baleno AT Maruti</h5>
+                <img src="./images/7 Seater cars (Manual and Automatic)-Baleno AT Maruti image.png" width="250"
+                    class=" img-fluid mx-auto" alt="maruti swift.png">
+                <div class="card-body mx-5 fs-5 fw-semibold">
+                    <p class="card-text"><img src="./images/Cars Hatchback-icon.png" alt="car hatchbag icon.png"
+                            class="mx-2">Hatchback</p>
+                    <p class="card-text"><img src="./images/Manual cars icon.png" alt="manul.png" class="mx-2">Automatic
+                    </p>
+                    <p class="card-text"><img src="./images/Cars seats icon.png" alt="seads.png" class="mx-2">7Seats</p>
+                    <div class="position-relative">
+                        <p class="card-text position-relative fs-3 fw-bold"><img src="./images/cars Rupees icon.png"
+                                alt="ruspee icon.png" class="mx-2">3500</p>
+                        <span class="position-absolute top-0 start-50 mx-3">Perday</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- view more  -->
+        <div class="text-center my-3">
+            <button class="  mt-5 fw-semibold py-2 px-3 rounded-4 ">View More</button>
+        </div>
+    </section>
+
+    <!-- line  -->
+    <div class="line bg-balck my-5 "></div>
+
+
+    <!-- Why Zara Cars Section -->
+    <section class="container whyzara  my-5">
+        <h2 class="text-center mb-5 text-black">WHY ZARA CARS</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sd-6 col-md-4">
+                <div class="card rounded-4 shadow-sm h-100 p-3">
+                    <div class="card-body text-justify">
+                        <h4 class="card-title text-black">Home Delivery and Return</h4>
+                        <p class="card-text text-black fs-5">
+                            One-time doorstep services, at your preferred location and time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-sd-6 col-md-4">
+                <div class="card rounded-4 shadow-sm h-100 p-3">
+                    <div class="card-body text-justify">
+                        <h4 class="card-title text-black">Flexible Pricing and Plans</h4>
+                        <p class="card-text text-black fs-5">
+                            Choose 'Unlimited Kms' with fuel plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-sd-6 col-md-4">
+                <div class="card rounded-4 shadow-sm h-100 p-3">
+                    <div class="card-body text-justify">
+                        <h4 class="card-title text-black">Well-Maintained Cars</h4>
+                        <p class="card-text text-black  fs-5">
+                            Regular service and maintenance inspected before each trip.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- line  -->
+    <div class="line bg-balck my-5 "></div>
+
+
+    <!-- FAQS section start -->
+    <section class="container ">
+        <div>
+            <h1 class="mb-5 fw-bold">FAQS</h1>
+            <h2 class="fs-4 fw-bold">Is there a speed limit?</h2>
+            <p class="fs-5 fw-semibold">Zara cars allows up to 125 km/hr.However it is 80 km/hr in few cities where some
+                cars might be equipped with speed governors as per government directives.Zara cars strictly advises to
+                follow local speed limits.</p>
+        </div>
+        <div>
+            <h2 class="fs-4 fw-bold">Can I extend/ cancel/ modify?</h2>
+            <p class="fs-5 fw-semibold">Yes,extensions are possible subject to availablity & charges.Cancelations &
+                modification will attract nominal charges as per our policy.</p>
+        </div>
+        <div>
+            <h2 class="fs-4 fw-bold">Booking criteria & documents?</h2>
+            <p class="fs-5 fw-semibold">Min.21 Years old,have a valid original government ID (Aadhar or Passport) and an
+                original har copy or a Digilocker of adriving license for "Light motor vehicles,"Which is atleast 6
+                months old at the time of starting the trip.We may ask for additional documents for verficaion in some
+                cases,e.g.,local ID or proof of travel </p>
+        </div>
+        <div>
+            <h2 class="fs-4 fw-bold">Are there any restricted areas?</h2>
+            <p class="fs-5 fw-semibold">Leh/Ladhakh,Split Valley & kaza/Nako regions are not permitted to take Zara
+                cars.Customer will be fully liable for any damages incurred to the car in that region</p>
+        </div>
+    </section>
+    <!-- FAQS section end -->
+
+
+    <!-- our happy customer section stRT  -->
+    <section class="container my-5">
+        <h2 class=" mb-5 text-black">Our Happy Customers</h2>
+        <div class="row g-4 my-5">
+            <!-- Review Card 1 -->
+            <div class="col-12 col-sd-6 col-md-4 ">
+                <div class="card rounded-4 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <img src="./images/Our happy customer image 1.png" alt="Reviewer 1"
+                            class="rounded-circle mb-3 width=60">
+                        <h4 class="card-title text-black">David 4⭐</h4>
+                        <p class="card-text text-black">Nice service for on time pickup and drop up.Good customer
+                            support and friendly service. The car was very smooth and they package was pocket friendly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Review Card 2 -->
+            <div class="col-md-4">
+                <div class="card rounded-4 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <img src="./images/Our happy customer image 2.png" alt="Reviewer 2"
+                            class="rounded-circle mb-3 width=60">
+                        <h4 class="card-title text-black">Mettilda 4⭐</h4>
+                        <p class="card-text text-black">Nice service for on time pickup and drop up.Good customer
+                            support and friendly service. The car was very smooth and they package was pocket friendly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Review Card 3 -->
+            <div class="col-md-4">
+                <div class="card rounded-4 shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <img src="./images/Our happy customer image 3.png" alt="Reviewer 3"
+                            class="rounded-circle mb-3 width=60">
+                        <h4 class="card-title text-black">Jhon 4⭐</h4>
+                        <p class="card-text text-black">Nice service for on time pickup and drop up.Good customer
+                            support and friendly service. The car was very smooth and they package was pocket friendly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our happy customer section END  -->
+
+
+
+    <!-- footer section start  -->
+    <footer class="py-4 ">
+        <div class="container py-4">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class=" d-flex mb-4">
+                        <a href="index.html"><img src="./images/Zara cars logo icon.png" alt="zara logo.png" class="me-2"></a>
+                        <div class="">
+                            <span class="text-black fw-bold fs-5">ZARA</span>
+                            <span class="d-block text-black fw-semibold">Cars</span>
+                        </div>
+                    </div>
+                    <div class="d-block">
+                        <img src="./images/Social media icon -Youtube.png" alt="Youtube.png" class="mx-2">
+                        <img src="./images/Social media icon -Twitter.png" alt="Twitter.png" class="mx-2">
+                        <img src="./images/Social media icon -Face book.png" alt="Face book.png" class="mx-2">
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-black fw-bold fs-4 mb-4">About Us</h5> 
+                    <ul class="text-black fs-4 list-unstyled">
+                        <li><a href="index.html"class="list-group-item">Home</a></li>
+                        <li><a href="about.html"class="list-group-item">About Us</a></li>
+                        <li><a href="cars.html"class="list-group-item">Our Cars</a></li>
+                        <li><a href="faqs.html"class="list-group-item">Faqs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-black fw-bold fs-4 mb-4">Contact Us</h5>
+                    <p class="fs-4"><img src="./images/Contuct us - phone icon.png" alt="phone icon.png" class="me-3">+9362652360</p>
+                    <p class="fs-4"><img src="./images/Contuct us -Email icon.png" alt="Email icon.png" class="me-3">zaracarscars.in</p>
+                    <p class="fs-4"><img src="./images/Contact us Location icon.png" alt=" Location icon.png" class="me-3"> 143,Perumal puram road,maddurai-627756
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous">    
+    </script>
+   <script src="script.js"></script>
+</body>
+
+</html>

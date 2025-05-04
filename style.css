@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.dropdown-menu {
+    width: 50vw;
+    /* height: 50vh; */
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    gap: 20px
+}
+
+.navbar {
+    color: black;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+
+}
+
+@media(max-width:550px) {
+    .dropdown-menu .dpi {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .dropdown-menu {
+        width: auto;
+    }
+}
+
+
+/* container pick  */
+.container-detail{
+    color: black;
+    background-color: #FFC14D;   
+    /* box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.3); */
+}
+.container-contend{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+
+}
+.container-contend p{
+    text-align: justify;
+    font-weight:600;
+   
+}
+.container-blue {
+    background-color: white;
+    /* Bootstrap blue color */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    /* Adjust width to fit screen */
+    /* max-width: 800px; */
+    
+    margin: auto;
+}
+
+.container-blue form input {
+    border: 1px solid black;
+}
+
+ /* banner section home page image   */
+ .banner img{
+        width: 100%;       
+ }
+ .line{
+    height: 1px;
+    width: 60%;
+    background-color: rgb(26, 25, 25);
+    margin: auto;
+
+ }
+
+ /* tick  */
+
+
+ .tick div span{
+   
+    background-color: #E5FB3E;
+    display: block;
+    border-radius: 10px;
+ }
+ .tick .container-item{
+    width: 100%;
+ }
+
+ .seater5 .card{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+    clip-path: inset(10px -10px -100px -10px)
+ }
+ .seater5 button{
+    background-color: #FFBE44;
+    color: black;
+    border: 1px solid black;
+ }
+ .seater5 button:hover{
+    background-color: #f5a30c;
+ }
+
+ .whyzara .card{
+    background-color:#FFE9C1;
+    text-align: justify;
+    /* min-width: 200px; */
+
+ }
+ 
+
+ .seater5 .card{
+    min-width: 300px;
+ }
+ footer{
+    background-color: #FFC965;
+    border-top: 1px solid black;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /* login page  */
+ .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+ }
+ .login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+}
+
+
+
+
+
+/* cars page styles */
